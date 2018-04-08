@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<test-run id="2" testcasecount="2" result="Passed" total="2" passed="2" failed="0" inconclusive="0" skipped="0" asserts="2" engine-version="3.8.0.0" clr-version="4.0.30319.42000" start-time="2018-04-08 10:57:55Z" end-time="2018-04-08 10:58:18Z" duration="23.016035">
+  <command-line><![CDATA[C:\Users\user\source\repos\GoogleProject\packages\NUnit.ConsoleRunner.3.8.0\tools\nunit3-console.exe  C:\Users\user\source\repos\GoogleProject\GoogleProject\bin\Debug\GoogleProject.dll --result=TestResult.xml]]></command-line>
+  <test-suite type="Assembly" id="0-1003" name="GoogleProject.dll" fullname="C:\Users\user\source\repos\GoogleProject\GoogleProject\bin\Debug\GoogleProject.dll" runstate="Runnable" testcasecount="2" result="Passed" start-time="2018-04-08 10:57:55Z" end-time="2018-04-08 10:58:18Z" duration="22.204779" total="2" passed="2" failed="0" warnings="0" inconclusive="0" skipped="0" asserts="2">
+    <environment framework-version="3.10.1.0" clr-version="4.0.30319.42000" os-version="Microsoft Windows NT 10.0.16299.0" platform="Win32NT" cwd="C:\Users\user\source\repos\GoogleProject\GoogleProject" machine-name="DESKTOP-IVM1G2M" user="user" user-domain="DESKTOP-IVM1G2M" culture="en-US" uiculture="en-GB" os-architecture="x64" />
+    <settings>
+      <setting name="DisposeRunners" value="True" />
+      <setting name="WorkDirectory" value="C:\Users\user\source\repos\GoogleProject\GoogleProject" />
+      <setting name="ImageRuntimeVersion" value="4.0.30319" />
+      <setting name="ImageTargetFrameworkName" value=".NETFramework,Version=v4.5" />
+      <setting name="ImageRequiresX86" value="False" />
+      <setting name="ImageRequiresDefaultAppDomainAssemblyResolver" value="False" />
+      <setting name="NumberOfTestWorkers" value="4" />
+    </settings>
+    <properties>
+      <property name="_PID" value="6668" />
+      <property name="_APPDOMAIN" value="domain-" />
+    </properties>
+    <test-suite type="TestSuite" id="0-1004" name="GoogleProject" fullname="GoogleProject" runstate="Runnable" testcasecount="2" result="Passed" start-time="2018-04-08 10:57:56Z" end-time="2018-04-08 10:58:18Z" duration="22.171907" total="2" passed="2" failed="0" warnings="0" inconclusive="0" skipped="0" asserts="2">
+      <test-suite type="TestSuite" id="0-1005" name="Features" fullname="GoogleProject.Features" runstate="Runnable" testcasecount="2" result="Passed" start-time="2018-04-08 10:57:56Z" end-time="2018-04-08 10:58:18Z" duration="22.170832" total="2" passed="2" failed="0" warnings="0" inconclusive="0" skipped="0" asserts="2">
+        <test-suite type="TestFixture" id="0-1000" name="AvivaSearchResultFeature" fullname="GoogleProject.Features.AvivaSearchResultFeature" classname="GoogleProject.Features.AvivaSearchResultFeature" runstate="Runnable" testcasecount="2" result="Passed" start-time="2018-04-08 10:57:56Z" end-time="2018-04-08 10:58:18Z" duration="22.162155" total="2" passed="2" failed="0" warnings="0" inconclusive="0" skipped="0" asserts="2">
+          <properties>
+            <property name="Description" value="Aviva search result" />
+          </properties>
+          <output><![CDATA[-> Using app.config
+]]></output>
+          <test-case id="0-1002" name="AvivaSearchNegativeScenario" fullname="GoogleProject.Features.AvivaSearchResultFeature.AvivaSearchNegativeScenario" methodname="AvivaSearchNegativeScenario" classname="GoogleProject.Features.AvivaSearchResultFeature" runstate="Runnable" seed="182375778" result="Passed" start-time="2018-04-08 10:57:56Z" end-time="2018-04-08 10:58:08Z" duration="11.479678" asserts="1">
+            <properties>
+              <property name="Description" value="Aviva search negative scenario" />
+            </properties>
+            <output><![CDATA[Given I am on Google home page
+-> done: AvivaSearchSteps.GivenINavigateToGoogleSearchPage() (1.1s)
+When I search for text Google
+-> done: AvivaSearchSteps.WhenIInititateSearch("Google") (2.2s)
+And I see the 5th link
+-> done: AvivaSearchSteps.WhenISeeTheThLink(5) (0.0s)
+Then I should not see the Aviva text
+-> done: AvivaSearchSteps.ThenIShouldNotSeeTheAvivaLink("Aviva") (0.0s)
+]]></output>
+          </test-case>
+          <test-case id="0-1001" name="AvivaSearchPositiveScenario" fullname="GoogleProject.Features.AvivaSearchResultFeature.AvivaSearchPositiveScenario" methodname="AvivaSearchPositiveScenario" classname="GoogleProject.Features.AvivaSearchResultFeature" runstate="Runnable" seed="1334851517" result="Passed" start-time="2018-04-08 10:58:08Z" end-time="2018-04-08 10:58:18Z" duration="10.107664" asserts="1">
+            <properties>
+              <property name="Description" value="Aviva search positive scenario" />
+            </properties>
+            <output><![CDATA[Given I am on Google home page
+-> done: AvivaSearchSteps.GivenINavigateToGoogleSearchPage() (1.1s)
+When I search for text Aviva
+-> done: AvivaSearchSteps.WhenIInititateSearch("Aviva") (2.1s)
+And I see the 5th link
+-> done: AvivaSearchSteps.WhenISeeTheThLink(5) (0.0s)
+Then I should see the Aviva text
+-> done: AvivaSearchSteps.ThenIShouldSeeTheAvivaLink("Aviva") (0.0s)
+]]></output>
+          </test-case>
+        </test-suite>
+      </test-suite>
+    </test-suite>
+  </test-suite>
+</test-run>
