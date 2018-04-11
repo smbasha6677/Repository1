@@ -19,6 +19,7 @@ namespace GoogleProject.Steps
 
         public IWebElement linkTextElement;
 
+
         [Given(@"I am on Google home page")]
         public void GivenINavigateToGoogleSearchPage()
         {
@@ -29,14 +30,29 @@ namespace GoogleProject.Steps
         public void WhenIInititateSearch(string searchText)
         {
             googleSearchPage.SearchText(searchText);
+            int noOfElements = googleSearchPage.ListElements.Count;
+            Console.WriteLine("noOfElements on home page:: " + noOfElements);
+            googleSearchPage. SearchTextBoxElement.SendKeys(Keys.Enter);
         }
+
+        [When(@"I see the (.*)th link in result page")]
+        public void WhenISeeTheThLinkInResultPage(int num)
+        {
+            if (googleSearchPage.LinkElements.Count >= num)
+            {
+                linkTextElement = googleSearchPage.LinkElements[num - 1];
+                Console.WriteLine(num + "th. Element link text is:: " + linkTextElement.Text);
+            }
+        }
+
 
         [When(@"I see the (.*)th link")]
         public void WhenISeeTheThLink(int linkElement)
         {
             if (googleSearchPage.LinkElements.Count >= linkElement)
             {
-                linkTextElement = googleSearchPage.LinkElements[linkElement - 1];   
+                linkTextElement = googleSearchPage.LinkElements[linkElement - 1];
+                Console.WriteLine(linkElement+"th. Element link text is:: " + linkTextElement.Text);
             }            
         }
 
@@ -45,11 +61,13 @@ namespace GoogleProject.Steps
         {
             Assert.IsTrue(linkTextElement.Text.Contains(compareText));
         }
-
-        [Then(@"I should not see the (.*) text")]
-        public void ThenIShouldNotSeeTheAvivaLink(string compareText)
+        
+        [Then(@"shoud not see (.*) text")]
+        public void ThenShoudNotSeeAviva_HomeFacebookText(string compareText)
         {
             Assert.IsFalse(linkTextElement.Text.Contains(compareText));
         }
+
+
     }
 }

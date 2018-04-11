@@ -7,12 +7,12 @@
 Scenario: Aviva search positive scenario
 	Given I am on Google home page 
 	When I search for text Aviva
-	And I see the 5th link
-	Then I should see the Aviva text
+	And I see the 5th link in result page
+	Then I should see the Aviva - Home | Facebook text
 
 Scenario: Aviva search negative scenario
 	Given I am on Google home page 
-	When I search for text Google
-	And I see the 5th link
-	Then I should not see the Aviva text
-
+	When I search for text Aviva
+	And I see the 4th link
+	Then I should see the Aviva For Advisers: Home text
+	But shoud not see Aviva - Home | Facebook text

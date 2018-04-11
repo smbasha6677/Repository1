@@ -17,7 +17,7 @@ namespace GoogleProject.Common
         public void BeforeScenario()
         {
             driver = new ChromeDriver();
-            driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(20);
+            driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(60);
             driver.Manage().Window.Maximize();
             driver.Manage().Cookies.DeleteAllCookies();
         }

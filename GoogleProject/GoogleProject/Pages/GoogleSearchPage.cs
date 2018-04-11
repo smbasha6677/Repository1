@@ -19,7 +19,15 @@ namespace GoogleProject.Pages
                 return driver.FindElement(By.Id("lst-ib"));
             }
         }
-       
+
+        public IList<IWebElement> ListElements
+        {
+            get
+            {
+                return driver.FindElements(By.XPath("//ul[@role='listbox']//li/descendant::div[@class='sbqs_c']"));
+            }
+        }
+
         public IList<IWebElement> LinkElements
         {
             get
@@ -36,8 +44,7 @@ namespace GoogleProject.Pages
         public void SearchText(string searchText)
         {
             SearchTextBoxElement.Clear();
-            SearchTextBoxElement.SendKeys(searchText);
-            SearchTextBoxElement.SendKeys(Keys.Enter);
+            SearchTextBoxElement.SendKeys(searchText+" ");
         }
     }
 }
