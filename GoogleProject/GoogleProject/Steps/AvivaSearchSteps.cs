@@ -39,13 +39,13 @@ namespace GoogleProject.Steps
             Console.WriteLine("no of links on google search result page:: " + noOfLinksCount);
         }
 
-        [Then(@"I should print the (.*)th link text as (.*)")]
-        public void ThenIShouldPrintTheThLinkTextAsAviva_HomeFacebook(int number, string compareText)
+        [Then(@"I should print the number (.*) link text as (.*)")]
+        public void ThenIShouldPrintTheNumberLinkTextAs(int number, string compareText)
         {   
             if (googleSearchPage.LinkElements.Count >= number)
             {
                 linkTextElement = googleSearchPage.LinkElements[number - 1];
-                Console.WriteLine(number + "th. Element link text on google search result page is::: " + linkTextElement.Text);
+                Console.WriteLine("#"+number +" Element link text on google search result page is::: " + linkTextElement.Text);
                 Assert.IsTrue(linkTextElement.Text.Contains(compareText));
             }
         }
@@ -58,3 +58,5 @@ namespace GoogleProject.Steps
 
     }
 }
+
+

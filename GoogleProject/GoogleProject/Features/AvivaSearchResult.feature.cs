@@ -77,7 +77,7 @@ this.ScenarioSetup(scenarioInfo);
 #line 9
  testRunner.Then("I can see the search result page with the number of links", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line 10
-    testRunner.And("I should print the 5th link text as Aviva - Home | Facebook", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+    testRunner.And("I should print the number 5 link text as Aviva - Home | Facebook", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
             this.ScenarioCleanup();
         }
@@ -96,7 +96,7 @@ this.ScenarioSetup(scenarioInfo);
 #line 15
  testRunner.Then("I can see the search result page with the number of links", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line 16
-    testRunner.And("I should print the 4th link text as Aviva - Wikipedia", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+    testRunner.And("I should print the number 1 link text as Aviva: Insurance, Savings & Investments", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line 17
  testRunner.But("shoud not see Aviva - Home | Facebook text", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "But ");
 #line hidden
