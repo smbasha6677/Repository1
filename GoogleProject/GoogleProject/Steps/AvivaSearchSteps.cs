@@ -17,57 +17,44 @@ namespace GoogleProject.Steps
     {
         public GoogleSearchPage googleSearchPage = new GoogleSearchPage(Hooks.driver);
 
-        public IWebElement linkTextElement;
-
+        public IWebElement linkTextElement;        
+        public int noOfLinksCount;
 
         [Given(@"I am on Google home page")]
-        public void GivenINavigateToGoogleSearchPage()
+        public void GivenIAmOnGoogleHomePage()
         {
             Hooks.driver.Navigate().GoToUrl("http://google.co.uk");
         }
 
         [When(@"I search for text (.*)")]
-        public void WhenIInititateSearch(string searchText)
+        public void WhenISearchForTextAviva(string searchText)
         {
             googleSearchPage.SearchText(searchText);
-            int noOfElements = googleSearchPage.ListElements.Count;
-            Console.WriteLine("noOfElements on home page:: " + noOfElements);
-            googleSearchPage. SearchTextBoxElement.SendKeys(Keys.Enter);
         }
 
-        [When(@"I see the (.*)th link in result page")]
-        public void WhenISeeTheThLinkInResultPage(int num)
+        [Then(@"I can see the search result page with the number of links")]
+        public void ThenICanSeeTheSearchResultPageWithTheNumberOfLinks()
         {
-            if (googleSearchPage.LinkElements.Count >= num)
+            noOfLinksCount = googleSearchPage.LinkElements.Count;
+            Console.WriteLine("no of links on google search result page:: " + noOfLinksCount);
+        }
+
+        [Then(@"I should print the (.*)th link text as (.*)")]
+        public void ThenIShouldPrintTheThLinkTextAsAviva_HomeFacebook(int number, string compareText)
+        {   
+            if (googleSearchPage.LinkElements.Count >= number)
             {
-                linkTextElement = googleSearchPage.LinkElements[num - 1];
-                Console.WriteLine(num + "th. Element link text is:: " + linkTextElement.Text);
+                linkTextElement = googleSearchPage.LinkElements[number - 1];
+                Console.WriteLine(number + "th. Element link text on google search result page is::: " + linkTextElement.Text);
+                Assert.IsTrue(linkTextElement.Text.Contains(compareText));
             }
         }
 
-
-        [When(@"I see the (.*)th link")]
-        public void WhenISeeTheThLink(int linkElement)
-        {
-            if (googleSearchPage.LinkElements.Count >= linkElement)
-            {
-                linkTextElement = googleSearchPage.LinkElements[linkElement - 1];
-                Console.WriteLine(linkElement+"th. Element link text is:: " + linkTextElement.Text);
-            }            
-        }
-
-        [Then(@"I should see the (.*) text")]
-        public void ThenIShouldSeeTheAvivaLink(string compareText)
-        {
-            Assert.IsTrue(linkTextElement.Text.Contains(compareText));
-        }
-        
         [Then(@"shoud not see (.*) text")]
         public void ThenShoudNotSeeAviva_HomeFacebookText(string compareText)
         {
             Assert.IsFalse(linkTextElement.Text.Contains(compareText));
         }
-
 
     }
 }

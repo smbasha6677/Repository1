@@ -13,6 +13,7 @@ C:\Users\user\source\repos\GoogleProject\GoogleProject\bin\Debug\nunit.framework
 C:\Users\user\source\repos\GoogleProject\GoogleProject\bin\Debug\System.ValueTuple.xml
 C:\Users\user\source\repos\GoogleProject\GoogleProject\bin\Debug\WebDriver.xml
 C:\Users\user\source\repos\GoogleProject\GoogleProject\bin\Debug\WebDriver.Support.xml
+C:\Users\user\source\repos\GoogleProject\GoogleProject\obj\Debug\GoogleProject.csprojResolveAssemblyReference.cache
 C:\Users\user\source\repos\GoogleProject\GoogleProject\obj\Debug\GoogleProject.csproj.CoreCompileInputs.cache
 C:\Users\user\source\repos\GoogleProject\GoogleProject\obj\Debug\GoogleProject.csproj.CopyComplete
 C:\Users\user\source\repos\GoogleProject\GoogleProject\obj\Debug\GoogleProject.dll

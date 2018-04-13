@@ -45,6 +45,7 @@ namespace GoogleProject.Pages
         {
             SearchTextBoxElement.Clear();
             SearchTextBoxElement.SendKeys(searchText+" ");
+            SearchTextBoxElement.SendKeys(Keys.Enter);
         }
     }
 }

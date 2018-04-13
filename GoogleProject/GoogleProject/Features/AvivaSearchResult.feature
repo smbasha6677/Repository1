@@ -3,16 +3,15 @@
 	As a customer
 	I want to see the Aviva link
 
-
 Scenario: Aviva search positive scenario
 	Given I am on Google home page 
 	When I search for text Aviva
-	And I see the 5th link in result page
-	Then I should see the Aviva - Home | Facebook text
+	Then I can see the search result page with the number of links
+    And I should print the 5th link text as Aviva - Home | Facebook
 
 Scenario: Aviva search negative scenario
-	Given I am on Google home page 
+    Given I am on Google home page 
 	When I search for text Aviva
-	And I see the 4th link
-	Then I should see the Aviva For Advisers: Home text
+	Then I can see the search result page with the number of links
+    And I should print the 4th link text as Aviva - Wikipedia
 	But shoud not see Aviva - Home | Facebook text
