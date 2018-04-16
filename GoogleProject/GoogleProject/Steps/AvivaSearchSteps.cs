@@ -39,7 +39,7 @@ namespace GoogleProject.Steps
             Console.WriteLine("no of links on google search result page:: " + noOfLinksCount);
         }
 
-        [Then(@"I should print the number (.*) link text as (.*)")]
+        [Then(@"I should see the number (.*) link as (.*)")]
         public void ThenIShouldPrintTheNumberLinkTextAs(int number, string compareText)
         {   
             if (googleSearchPage.LinkElements.Count >= number)

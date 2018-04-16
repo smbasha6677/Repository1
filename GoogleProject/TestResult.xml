@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" standalone="no"?>
-<test-run id="2" testcasecount="2" result="Passed" total="2" passed="2" failed="0" inconclusive="0" skipped="0" asserts="3" engine-version="3.8.0.0" clr-version="4.0.30319.42000" start-time="2018-04-13 23:08:34Z" end-time="2018-04-13 23:08:55Z" duration="21.167790">
+<test-run id="2" testcasecount="2" result="Passed" total="2" passed="2" failed="0" inconclusive="0" skipped="0" asserts="3" engine-version="3.8.0.0" clr-version="4.0.30319.42000" start-time="2018-04-16 10:36:49Z" end-time="2018-04-16 10:37:15Z" duration="25.508768">
   <command-line><![CDATA[packages\NUnit.ConsoleRunner.3.8.0\tools\nunit3-console.exe  GoogleProject\bin\Debug\GoogleProject.dll --result=TestResult.xml]]></command-line>
-  <test-suite type="Assembly" id="0-1003" name="GoogleProject.dll" fullname="C:\Users\user\Desktop\NewShare\GoogleProject\GoogleProject\bin\Debug\GoogleProject.dll" runstate="Runnable" testcasecount="2" result="Passed" start-time="2018-04-13 23:08:35Z" end-time="2018-04-13 23:08:55Z" duration="20.328146" total="2" passed="2" failed="0" warnings="0" inconclusive="0" skipped="0" asserts="3">
+  <test-suite type="Assembly" id="0-1003" name="GoogleProject.dll" fullname="C:\Users\user\Desktop\NewShare\GoogleProject\GoogleProject\bin\Debug\GoogleProject.dll" runstate="Runnable" testcasecount="2" result="Passed" start-time="2018-04-16 10:36:51Z" end-time="2018-04-16 10:37:15Z" duration="23.577741" total="2" passed="2" failed="0" warnings="0" inconclusive="0" skipped="0" asserts="3">
     <environment framework-version="3.10.1.0" clr-version="4.0.30319.42000" os-version="Microsoft Windows NT 10.0.16299.0" platform="Win32NT" cwd="C:\Users\user\Desktop\NewShare\GoogleProject" machine-name="DESKTOP-IVM1G2M" user="user" user-domain="DESKTOP-IVM1G2M" culture="en-US" uiculture="en-GB" os-architecture="x64" />
     <settings>
       <setting name="DisposeRunners" value="True" />
@@ -13,47 +13,47 @@
       <setting name="NumberOfTestWorkers" value="4" />
     </settings>
     <properties>
-      <property name="_PID" value="4868" />
+      <property name="_PID" value="10408" />
       <property name="_APPDOMAIN" value="domain-" />
     </properties>
-    <test-suite type="TestSuite" id="0-1004" name="GoogleProject" fullname="GoogleProject" runstate="Runnable" testcasecount="2" result="Passed" start-time="2018-04-13 23:08:35Z" end-time="2018-04-13 23:08:55Z" duration="20.294053" total="2" passed="2" failed="0" warnings="0" inconclusive="0" skipped="0" asserts="3">
-      <test-suite type="TestSuite" id="0-1005" name="Features" fullname="GoogleProject.Features" runstate="Runnable" testcasecount="2" result="Passed" start-time="2018-04-13 23:08:35Z" end-time="2018-04-13 23:08:55Z" duration="20.293308" total="2" passed="2" failed="0" warnings="0" inconclusive="0" skipped="0" asserts="3">
-        <test-suite type="TestFixture" id="0-1000" name="AvivaSearchResultFeature" fullname="GoogleProject.Features.AvivaSearchResultFeature" classname="GoogleProject.Features.AvivaSearchResultFeature" runstate="Runnable" testcasecount="2" result="Passed" start-time="2018-04-13 23:08:35Z" end-time="2018-04-13 23:08:55Z" duration="20.285289" total="2" passed="2" failed="0" warnings="0" inconclusive="0" skipped="0" asserts="3">
+    <test-suite type="TestSuite" id="0-1004" name="GoogleProject" fullname="GoogleProject" runstate="Runnable" testcasecount="2" result="Passed" start-time="2018-04-16 10:36:51Z" end-time="2018-04-16 10:37:15Z" duration="23.542868" total="2" passed="2" failed="0" warnings="0" inconclusive="0" skipped="0" asserts="3">
+      <test-suite type="TestSuite" id="0-1005" name="Features" fullname="GoogleProject.Features" runstate="Runnable" testcasecount="2" result="Passed" start-time="2018-04-16 10:36:51Z" end-time="2018-04-16 10:37:15Z" duration="23.541870" total="2" passed="2" failed="0" warnings="0" inconclusive="0" skipped="0" asserts="3">
+        <test-suite type="TestFixture" id="0-1000" name="AvivaSearchResultFeature" fullname="GoogleProject.Features.AvivaSearchResultFeature" classname="GoogleProject.Features.AvivaSearchResultFeature" runstate="Runnable" testcasecount="2" result="Passed" start-time="2018-04-16 10:36:51Z" end-time="2018-04-16 10:37:15Z" duration="23.534213" total="2" passed="2" failed="0" warnings="0" inconclusive="0" skipped="0" asserts="3">
           <properties>
             <property name="Description" value="Aviva search result" />
           </properties>
           <output><![CDATA[-> Using app.config
 ]]></output>
-          <test-case id="0-1002" name="AvivaSearchNegativeScenario" fullname="GoogleProject.Features.AvivaSearchResultFeature.AvivaSearchNegativeScenario" methodname="AvivaSearchNegativeScenario" classname="GoogleProject.Features.AvivaSearchResultFeature" runstate="Runnable" seed="1790183481" result="Passed" start-time="2018-04-13 23:08:36Z" end-time="2018-04-13 23:08:46Z" duration="10.285980" asserts="2">
+          <test-case id="0-1002" name="AvivaSearchNegativeScenario" fullname="GoogleProject.Features.AvivaSearchResultFeature.AvivaSearchNegativeScenario" methodname="AvivaSearchNegativeScenario" classname="GoogleProject.Features.AvivaSearchResultFeature" runstate="Runnable" seed="1089034696" result="Passed" start-time="2018-04-16 10:36:52Z" end-time="2018-04-16 10:37:05Z" duration="13.202537" asserts="2">
             <properties>
               <property name="Description" value="Aviva search negative scenario" />
             </properties>
             <output><![CDATA[Given I am on Google home page
--> done: AvivaSearchSteps.GivenIAmOnGoogleHomePage() (1.1s)
+-> done: AvivaSearchSteps.GivenIAmOnGoogleHomePage() (1.6s)
 When I search for text Aviva
--> done: AvivaSearchSteps.WhenISearchForTextAviva("Aviva") (1.4s)
+-> done: AvivaSearchSteps.WhenISearchForTextAviva("Aviva") (2.4s)
 Then I can see the search result page with the number of links
 no of links on google search result page:: 6
 -> done: AvivaSearchSteps.ThenICanSeeTheSearchResultPageWithTheNumberOfLinks() (0.0s)
-And I should print the number 1 link text as Aviva: Insurance, Savings & Investments
+And I should see the number 1 link as Aviva: Insurance, Savings & Investments
 #1 Element link text on google search result page is::: Aviva: Insurance, Savings & Investments
 -> done: AvivaSearchSteps.ThenIShouldPrintTheNumberLinkTextAs(1, "Aviva: Insurance,...") (0.1s)
 But shoud not see Aviva - Home | Facebook text
 -> done: AvivaSearchSteps.ThenShoudNotSeeAviva_HomeFacebookText("Aviva - Home | Fa...") (0.0s)
 ]]></output>
           </test-case>
-          <test-case id="0-1001" name="AvivaSearchPositiveScenario" fullname="GoogleProject.Features.AvivaSearchResultFeature.AvivaSearchPositiveScenario" methodname="AvivaSearchPositiveScenario" classname="GoogleProject.Features.AvivaSearchResultFeature" runstate="Runnable" seed="776644251" result="Passed" start-time="2018-04-13 23:08:46Z" end-time="2018-04-13 23:08:55Z" duration="9.426087" asserts="1">
+          <test-case id="0-1001" name="AvivaSearchPositiveScenario" fullname="GoogleProject.Features.AvivaSearchResultFeature.AvivaSearchPositiveScenario" methodname="AvivaSearchPositiveScenario" classname="GoogleProject.Features.AvivaSearchResultFeature" runstate="Runnable" seed="1377809153" result="Passed" start-time="2018-04-16 10:37:05Z" end-time="2018-04-16 10:37:15Z" duration="9.698346" asserts="1">
             <properties>
               <property name="Description" value="Aviva search positive scenario" />
             </properties>
             <output><![CDATA[Given I am on Google home page
--> done: AvivaSearchSteps.GivenIAmOnGoogleHomePage() (1.5s)
+-> done: AvivaSearchSteps.GivenIAmOnGoogleHomePage() (1.1s)
 When I search for text Aviva
--> done: AvivaSearchSteps.WhenISearchForTextAviva("Aviva") (1.4s)
+-> done: AvivaSearchSteps.WhenISearchForTextAviva("Aviva") (2.0s)
 Then I can see the search result page with the number of links
 no of links on google search result page:: 6
 -> done: AvivaSearchSteps.ThenICanSeeTheSearchResultPageWithTheNumberOfLinks() (0.0s)
-And I should print the number 5 link text as Aviva - Home | Facebook
+And I should see the number 5 link as Aviva - Home | Facebook
 #5 Element link text on google search result page is::: Aviva - Home | Facebook
 -> done: AvivaSearchSteps.ThenIShouldPrintTheNumberLinkTextAs(5, "Aviva - Home | Fa...") (0.1s)
 ]]></output>
